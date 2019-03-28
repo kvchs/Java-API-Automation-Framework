@@ -24,3 +24,17 @@
             <version>3.1.5</version>
         </dependency>
 `
+
+#### Mock实现  
+下载地址：https://repo1.maven.org/maven2/com/github/dreamhead/moco-runner/0.12.0/  
+执行命令：java -jar moco-runner-0.12.0-standalone.jar http -p 6677 -c start.json  
+访问：http://127.0.0.1:6677/demo
+`
+<!--Mock依赖-->
+        <!-- https://mvnrepository.com/artifact/com.github.dreamhead/moco-runner -->
+        <dependency>
+            <groupId>com.github.dreamhead</groupId>
+            <artifactId>moco-runner</artifactId>
+            <version>0.12.0</version>
+        </dependency>
+`

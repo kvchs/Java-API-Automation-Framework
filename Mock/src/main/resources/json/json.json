@@ -1,0 +1,135 @@
+[
+  {
+    "description": "Get Method",
+    "request": {
+      "uri": "/get_demo",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+
+      },
+      "text": "response from Get Method"
+    }
+  },
+  {
+    "description": "Get Method With Parameter",
+    "request": {
+      "uri": "/get_with_parameter",
+      "method": "get",
+      "queries": {
+        "name": "charleychen",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "response from Get Method With Parameter"
+    }
+  },
+  {
+    "description": "post request",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "first post response"
+    }
+  },
+  {
+    "description": "模拟一个带参数的post请求",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "lyn",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "this is a post request with parameter"
+    }
+  },
+  {
+    "description": "cookies in get method",
+    "request": {
+      "uri": "/getwithcookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "must visit with cookies info"
+    }
+  },
+  {
+    "description": "cookies in post method",
+    "request": {
+      "uri": "/postwithcookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "charleychen",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "success": "true",
+        "status_code": "50000"
+      }
+    }
+  },
+  {
+    "description": "post method with header",
+    "request": {
+      "uri": "/postwithheader",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "headers":{
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "aa",
+        "age": "112"
+      }
+    },
+    "response": {
+      "json": {
+        "key": "value"
+      }
+    }
+  },
+  {
+    "description": "redirect to baidu",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "redirect to myself",
+    "request": {
+      "uri": "/redirect/myself"
+    },
+    "redirectTo": "/redirect/my"
+  },
+  {
+    "description": "new page",
+    "request": {
+      "uri": "/redirect/my",
+      "method": "get"
+    },
+    "response": {
+      "text": "very good"
+    }
+  }
+
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Get Method",
+    "request": {
+      "uri": "/get_demo",
+      "method": "get"
+    },
+    "response": {
+      "text": "response from Get Method"
+    }
+  }
+]
