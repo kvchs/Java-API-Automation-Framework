@@ -13,6 +13,7 @@
         <module>ExtentReport</module>
         <module>Mock</module>
         <module>HttpClient</module>
+        <module>SpringBoot</module>
     </modules>
 
     <dependencies>
@@ -73,6 +74,10 @@
             <artifactId>json</artifactId>
             <version>20180813</version>
         </dependency>
+
+
+
+
 
 
     </dependencies>
